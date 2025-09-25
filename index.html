@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website RevoU Camp</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="CSS/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body
+    class="font-sans bg-[#0B090C] text-white"
+    style="font-family: 'Poppins', sans-serif"
+  >
+    <!-- Navbar -->
+    <!-- Navbar -->
+    <nav class="sticky top-0 z-50 w-full bg-[#0B090C] border-b border-gray-700">
+      <div class="flex items-center justify-between px-6 md:px-10 py-5">
+        <!-- Logo -->
+        <div class="flex items-center">
+          <div
+            class="w-12 h-12 flex items-center justify-center rounded-full bg-[#F1FF2E] text-black font-bold text-xs"
+          >
+            AN <br />
+            DK
+          </div>
+        </div>
+
+        <!-- Menu Desktop -->
+        <div class="hidden md:flex space-x-2">
+          <a href="#home" class="px-4 py-1 rounded text-sm hover:text-[#F1FF2E]"
+            >Home</a
+          >
+          <a
+            href="#profile"
+            class="px-4 py-1 rounded text-sm hover:text-[#F1FF2E]"
+            >Our Profile</a
+          >
+          <a
+            href="#portfolio"
+            class="px-4 py-1 rounded text-sm hover:text-[#F1FF2E]"
+            >Portfolio</a
+          >
+          <a
+            href="#message"
+            class="px-4 py-1 rounded text-sm hover:text-[#F1FF2E]"
+            >Message Us</a
+          >
+        </div>
+
+        <!-- Hamburger (mobile) -->
+        <div class="md:hidden">
+          <button id="menu-btn" class="focus:outline-none text-white">
+            <svg
+              class="w-8 h-8"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile Menu (hidden default) -->
+      <div
+        id="mobile-menu"
+        class="hidden flex-col space-y-2 px-6 py-2 bg-[#0B090C] border-t border-gray-700 md:hidden absolute top-full left-0 w-full"
+      >
+        <a
+          href="#home"
+          class="block px-4 py-1 rounded text-sm hover:text-[#F1FF2E]"
+          >Home</a
+        >
+        <a
+          href="#profile"
+          class="block px-4 py-1 rounded text-sm hover:text-[#F1FF2E]"
+          >Our Profile</a
+        >
+        <a
+          href="#portfolio"
+          class="block px-4 py-1 rounded text-sm hover:text-[#F1FF2E]"
+          >Portfolio</a
+        >
+        <a
+          href="#message"
+          class="block px-4 py-1 rounded text-sm hover:text-[#F1FF2E]"
+          >Message Us</a
+        >
+      </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <!-- <div
+      id="mobile-menu"
+      class="hidden flex-col space-y-2 px-6 py-2 bg-[#0B090C] md:hidden"
+    >
+      <a
+        href="#home"
+        class="block px-4 py-1 rounded text-sm hover:text-[#F1FF2E]"
+        >Home</a
+      >
+      <a
+        href="#profile"
+        class="block px-4 py-1 rounded text-sm hover:text-[#F1FF2E]"
+        >Our Profile</a
+      >
+      <a
+        href="#portfolio"
+        class="block px-4 py-1 rounded text-sm hover:text-[#F1FF2E]"
+        >Portfolio</a
+      >
+      <a
+        href="#message"
+        class="block px-4 py-1 rounded text-sm hover:text-[#F1FF2E]"
+        >Message Us</a
+      >
+    </div> -->
+
+    <!-- Banner -->
+    <section id="home" class="w-full h-[90vh] flex items-center justify-center">
+      <div
+        class="w-full h-full bg-cover bg-center"
+        style="background-image: url('CSS/img/image1.jpg')"
+      >
+        <div
+          class="w-full h-full bg-black/60 flex flex-col items-center justify-center text-white"
+        >
+          <h1 id="welcome-text" class="text-3xl md:text-5xl font-bold">
+            Hi , Welcome To Website
+          </h1>
+          <p class="mt-2 text-sm md:text-lg">
+            Perusahaan yang berjalan di bidang Technology and Information
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Company Profile Section -->
+    <section id="profile" class="bg-[#ffffff] py-16">
+      <h2
+        class="text-3xl md:text-4xl font-bold text-center text-[#0B090C] mb-12"
+      >
+        Profile
+      </h2>
+      <div
+        class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-8 items-center"
+      >
+        <!-- Foto -->
+        <div class="flex justify-center">
+          <img
+            src="CSS/img/image1.jpg"
+            alt="Company Profile"
+            class="rounded-lg shadow-lg w-full md:w-4/5 object-cover"
+          />
+        </div>
+
+        <!-- Deskripsi -->
+        <div class="text-white">
+          <h2 class="text-3xl md:text-4xl font-bold mb-6 text-[#F1FF2E]">
+            Installing Innovation & Reliability To Every Product
+          </h2>
+          <p class="text-gray-500 leading-relaxed">
+            PT Dika Technology adalah perusahaan digital agency yang membantu
+            Anda dalam mengerjakan berbagai proyek desain dan pengembangan
+            teknologi. Berdiri sejak tahun 2022, kami telah menyelesaikan lebih
+            dari <span class="text-[#F1FF2E] font-semibold">100 proyek</span>
+            dengan tim profesional di bidangnya.
+          </p>
+          <p class="text-gray-500 leading-relaxed mt-4">
+            Layanan kami meliputi pembuatan website, aplikasi mobile, sistem
+            informasi, hingga konsultasi teknologi. Kami selalu berkomitmen
+            menghadirkan inovasi dan keandalan di setiap produk, serta
+            memberikan solusi terbaik sesuai kebutuhan klien.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Visi & Misi Section -->
+    <section class="bg-[#0B090C] py-16">
+      <div class="container mx-auto px-6">
+        <h2
+          class="text-3xl md:text-4xl font-bold text-center text-[#F1FF2E] mb-12"
+        >
+          Visi & Misi
+        </h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+          <!-- Visi -->
+          <div
+            class="bg-[#F1FF2E] p-8 rounded-lg shadow-lg flex flex-col items-center justify-center text-center"
+          >
+            <h3 class="text-2xl font-semibold mb-4 text-black">Visi</h3>
+            <p class="text-black leading-relaxed">
+              Menjadi perusahaan teknologi terdepan di Indonesia yang mampu
+              memberikan solusi digital inovatif, andal, dan berkelanjutan untuk
+              mendorong transformasi digital di berbagai sektor industri.
+            </p>
+          </div>
+
+          <!-- Misi -->
+          <div
+            class="bg-[#F1FF2E] p-8 rounded-lg shadow-lg flex flex-col items-center justify-center text-center"
+          >
+            <h3 class="text-2xl font-semibold mb-4 text-black">Misi</h3>
+            <p class="text-black leading-relaxed">
+              Memberikan layanan digital terbaik melalui pengembangan website,
+              aplikasi mobile, dan sistem informasi yang inovatif. <br />
+              <br />
+              Kami berkomitmen menghadirkan solusi yang relevan dengan kebutuhan
+              klien, mendukung transformasi digital, serta membangun tim
+              profesional yang berintegritas dan berdampak positif bagi
+              masyarakat.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="bg-[#ffffff] py-16">
+      <div class="container mx-auto px-6">
+        <h2
+          class="text-3xl md:text-4xl font-bold text-center text-[#0B090C] mb-12"
+        >
+          Portfolio
+        </h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Item 1 -->
+          <div class="rounded-lg overflow-hidden shadow-lg">
+            <img
+              src="CSS/img/porto1.jpg"
+              alt="Portfolio 1"
+              class="w-full h-64 object-cover transform transition duration-500 hover:scale-110"
+            />
+          </div>
+
+          <!-- Item 2 -->
+          <div class="rounded-lg overflow-hidden shadow-lg">
+            <img
+              src="CSS/img/porto2.jpg"
+              alt="Portfolio 2"
+              class="w-full h-64 object-cover transform transition duration-500 hover:scale-110"
+            />
+          </div>
+
+          <!-- Item 3 -->
+          <div class="rounded-lg overflow-hidden shadow-lg">
+            <img
+              src="CSS/img/porto3.jpg"
+              alt="Portfolio 3"
+              class="w-full h-64 object-cover transform transition duration-500 hover:scale-110"
+            />
+          </div>
+
+          <!-- Item 4 -->
+          <div class="rounded-lg overflow-hidden shadow-lg">
+            <img
+              src="CSS/img/porto4.jpg"
+              alt="Portfolio 4"
+              class="w-full h-64 object-cover transform transition duration-500 hover:scale-110"
+            />
+          </div>
+
+          <!-- Item 5 -->
+          <div class="rounded-lg overflow-hidden shadow-lg">
+            <img
+              src="CSS/img/porto5.jpg"
+              alt="Portfolio 5"
+              class="w-full h-64 object-cover transform transition duration-500 hover:scale-110"
+            />
+          </div>
+
+          <!-- Item 6 -->
+          <div class="rounded-lg overflow-hidden shadow-lg">
+            <img
+              src="CSS/img/porto6.jpg"
+              alt="Portfolio 6"
+              class="w-full h-64 object-cover transform transition duration-500 hover:scale-110"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Message Us Section -->
+    <section id="message" class="bg-[#0B090C] py-16">
+      <div class="container mx-auto px-6">
+        <h2
+          class="text-3xl md:text-4xl font-bold text-center text-[#F1FF2E] mb-12"
+        >
+          Message Us
+        </h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10 text-white">
+          <!-- Form -->
+          <form id="messageForm" class="space-y-4">
+            <!-- Nama -->
+            <div class="flex items-center">
+              <label for="nama" class="w-32">Nama :</label>
+              <input
+                type="text"
+                id="nama"
+                name="nama"
+                class="flex-1 px-3 py-2 rounded-md text-black"
+                required
+              />
+            </div>
+
+            <!-- Tanggal Lahir -->
+            <div class="flex items-center">
+              <label for="tanggal" class="w-32">Tanggal Lahir :</label>
+              <input
+                type="date"
+                id="tanggal"
+                name="tanggal"
+                class="flex-1 px-3 py-2 rounded-md text-black"
+                required
+              />
+            </div>
+
+            <!-- Jenis Kelamin -->
+            <div class="flex items-center">
+              <label class="w-32">Jenis Kelamin :</label>
+              <div class="flex items-center space-x-4">
+                <label
+                  ><input
+                    type="radio"
+                    name="gender"
+                    value="Laki - Laki"
+                    required
+                  />
+                  Laki - Laki</label
+                >
+                <label
+                  ><input type="radio" name="gender" value="Perempuan" />
+                  Perempuan</label
+                >
+              </div>
+            </div>
+
+            <!-- Pesan -->
+            <div class="flex items-start">
+              <label for="pesan" class="w-32 mt-2">Pesan :</label>
+              <textarea
+                id="pesan"
+                name="pesan"
+                rows="4"
+                class="flex-1 px-3 py-2 rounded-md text-black"
+                required
+              ></textarea>
+            </div>
+
+            <!-- Submit -->
+            <button
+              type="submit"
+              class="w-full bg-[#F1FF2E] text-black font-semibold py-2 rounded-md hover:bg-yellow-300"
+            >
+              Submit
+            </button>
+          </form>
+
+          <!-- Output -->
+          <div
+            id="output"
+            class="border border-gray-400 p-6 rounded-md bg-[#1a1a1d]"
+          >
+            <p class="mb-2">
+              <span class="font-semibold">Current time :</span>
+              <span id="currentTime"></span>
+            </p>
+            <p>
+              <span class="font-semibold">Nama :</span>
+              <span id="outNama"></span>
+            </p>
+            <p>
+              <span class="font-semibold">Tanggal Lahir :</span>
+              <span id="outTanggal"></span>
+            </p>
+            <p>
+              <span class="font-semibold">Jenis Kelamin :</span>
+              <span id="outGender"></span>
+            </p>
+            <p>
+              <span class="font-semibold">Pesan :</span>
+              <span id="outPesan"></span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer class="bg-[#0B090C] text-white py-4 border-t border-gray-700">
+      <div class="container mx-auto px-6">
+        <p class="text-right text-sm">
+          created by <span class="font-semibold">Andhikfjr</span>
+        </p>
+      </div>
+    </footer>
+  </body>
+  <script src="JS/script.js"></script>
+</html>
