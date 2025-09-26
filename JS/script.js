@@ -24,7 +24,7 @@ window.onload = function () {
 
   // Kalau lolos validasi, tampilkan di halaman
   const welcomeText = document.getElementById("welcome-text");
-  welcomeText.textContent = `Hi ${nama}, Welcome To Website`;
+  welcomeText.textContent = `Hi ${nama}, Welcome To DikaTECH`;
 };
 
 document.getElementById("messageForm").addEventListener("submit", function (e) {
@@ -43,3 +43,4 @@ document.getElementById("messageForm").addEventListener("submit", function (e) {
   document.getElementById("outGender").textContent = gender;
   document.getElementById("outPesan").textContent = pesan;
 });
+
